@@ -8,6 +8,8 @@ Color greyColor2 = "C0C0C0".toColor();
 
 TextStyle blackFontStyle = GoogleFonts.poppins()
     .copyWith(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 30);
+TextStyle blackFontStyle2 = GoogleFonts.poppins()
+    .copyWith(color: Colors.black, fontWeight: FontWeight.w600, fontSize: 15);
 TextStyle greyFontStyle1 = GoogleFonts.poppins()
     .copyWith(color: greyColor1, fontWeight: FontWeight.w400, fontSize: 18);
 TextStyle greyFontStyle2 = GoogleFonts.poppins()

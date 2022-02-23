@@ -27,22 +27,22 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Menu and Photo
-            Container(
-              margin: EdgeInsets.only(top: 10, left: 20, right: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.menu),
-                  Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                        color: mainColor),
-                  )
-                ],
-              ),
-            ),
+            // Container(
+            //   margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            //   child: Row(
+            //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //     children: [
+            //       Icon(Icons.menu),
+            //       Container(
+            //         height: 40,
+            //         width: 40,
+            //         decoration: BoxDecoration(
+            //             borderRadius: BorderRadius.circular(8),
+            //             color: mainColor),
+            //       )
+            //     ],
+            //   ),
+            // ),
             SizedBox(
               height: 20,
             ),
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       width: 200,
                       height: 300,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(20),
                           image: DecorationImage(
                               image: AssetImage('img/mountain.jpeg'))),
                     );
@@ -122,6 +122,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 children: [
                   Text(
                     'Explore more',
+                    style: blackFontStyle2,
                   ),
                   Text(
                     'see all',
@@ -146,14 +147,23 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             height: 80,
                             width: 80,
                             decoration: BoxDecoration(
-                                color: '96B7FF'.toColor(),
+                                color: 'F3F4F8'.toColor(),
                                 borderRadius: BorderRadius.circular(8),
                                 image: DecorationImage(
                                   image: AssetImage('img/' +
                                       categories.keys.elementAt(index)),
                                 )),
                           ),
-                          Text(categories.values.elementAt(index))
+                          Container(
+                            margin: EdgeInsets.only(top: 5),
+                            child: Text(
+                              categories.values.elementAt(index),
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          )
                         ],
                       ),
                     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:supercharged/supercharged.dart';
 import 'package:travel_app/themes/themes.dart';
 
 part 'main_page.dart';

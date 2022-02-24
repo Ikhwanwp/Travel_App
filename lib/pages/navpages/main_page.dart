@@ -25,7 +25,7 @@ class _MainPageState extends State<MainPage> {
           onTap: onTap,
           currentIndex: currentIndex,
           selectedItemColor: mainColor,
-          unselectedItemColor: greyColor2,
+          unselectedItemColor: lightGreyColor,
           showSelectedLabels: false,
           elevation: 0,
           items: [

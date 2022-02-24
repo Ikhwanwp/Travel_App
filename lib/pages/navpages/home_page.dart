@@ -26,34 +26,38 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Menu and Photo
-            // Container(
-            //   margin: EdgeInsets.only(top: 10, left: 20, right: 20),
-            //   child: Row(
-            //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //     children: [
-            //       Icon(Icons.menu),
-            //       Container(
-            //         height: 40,
-            //         width: 40,
-            //         decoration: BoxDecoration(
-            //             borderRadius: BorderRadius.circular(8),
-            //             color: mainColor),
-            //       )
-            //     ],
-            //   ),
-            // ),
             SizedBox(
               height: 20,
             ),
             // Discover
             Container(
-              margin: EdgeInsets.only(
-                left: 20,
-              ),
-              child: Text(
-                'Discover',
-                style: blackFontStyle,
+              margin: EdgeInsets.only(left: 20, right: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        'D',
+                        style: blackFontStyle1.copyWith(color: mainColor),
+                      ),
+                      Text(
+                        'iscover',
+                        style: blackFontStyle1,
+                      )
+                    ],
+                  ),
+                  Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        image: DecorationImage(
+                            image: AssetImage('img/person.png'),
+                            fit: BoxFit.cover),
+                        color: mainColor),
+                  )
+                ],
               ),
             ),
             SizedBox(
@@ -69,18 +73,18 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     labelPadding: EdgeInsets.only(left: 20, right: 20),
                     controller: _tabController,
                     labelColor: mainColor,
-                    unselectedLabelColor: greyColor2,
+                    unselectedLabelColor: lightGreyColor,
                     isScrollable: true,
                     indicator: CircleTabIndicator(color: mainColor, radius: 4),
                     tabs: [
                       Tab(
-                        text: 'Places',
+                        text: 'Popular',
                       ),
                       Tab(
-                        text: 'Inspirations',
+                        text: 'Indonesia',
                       ),
                       Tab(
-                        text: 'Emotions',
+                        text: 'Japan',
                       ),
                     ]),
               ),

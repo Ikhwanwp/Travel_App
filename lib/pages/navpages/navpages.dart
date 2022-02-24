@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:supercharged/supercharged.dart';
@@ -9,3 +11,4 @@ part 'my_page.dart';
 part 'bar_item_page.dart';
 part 'home_page.dart';
 part 'detail_page.dart';
+part 'destination_detail_page.dart';

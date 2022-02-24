@@ -42,13 +42,60 @@ class DetailPage extends StatelessWidget {
             ),
             Positioned(
                 child: Container(
+              width: MediaQuery.of(context).size.width,
               margin: EdgeInsets.only(top: 250),
-              // color: Colors.white,
+              // height: 500,
+              // color: Colors.blue,
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      topRight: Radius.circular(20))),
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30))),
+              child: Container(
+                margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Semeru'),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.location_on,
+                                  color: 'F90000'.toColor(),
+                                ),
+                                Text('Malang')
+                              ],
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Wrap(
+                              children: List.generate(
+                                  5,
+                                  (index) => Icon(
+                                        Icons.star,
+                                        color: mainColor,
+                                      )),
+                            )
+                          ],
+                        ),
+                        Text(
+                          '\$ 25',
+                          style: blackFontStyle1,
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
             ))
           ],
         ),

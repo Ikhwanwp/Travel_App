@@ -39,7 +39,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       children: [
                         Text(
                           "Explore",
-                          style: blackFontStyle,
+                          style: blackFontStyle1,
                         ),
                         Text(
                           "The World",
